@@ -18,6 +18,8 @@
 @property (nonatomic, readonly, getter=isDeviceConnected) BOOL deviceConnected;
 -(AKDeviceInfo *)deviceInfo;
 @property (nonatomic, copy) dispatch_block_t onDeviceConnected;
+@property (nonatomic, copy) dispatch_block_t onDeviceDisconnected;
+
 
 @property (nonatomic, readonly, getter=isCardAvailable) BOOL cardAvailable;
 -(AKCardType)cardType;

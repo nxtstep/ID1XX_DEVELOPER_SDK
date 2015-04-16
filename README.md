@@ -36,6 +36,20 @@ Please select 'Watch' on this repository for the latest updates
 
 ```[[AppIdKeyController sharedInstance] isDeviceConnected]```
 
+Run a block when the terminal status changes:
+
+```
+[[AppIdKeyController sharedInstance] setOnDeviceConnected:^{
+	// your code here
+}];
+```
+
+```
+[[AppIdKeyController sharedInstance] setOnDeviceDisconnected:^{
+	// your code here
+}];
+```
+
 #### Smart Card Status
 
 ```[[AppIdKeyController sharedInstance] isCardAvailable]```
